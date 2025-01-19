@@ -27,7 +27,7 @@ Also you can use my referral code QfLc9A to boost your points.
     docker compose up -d
     ```
 
-### Support
+## Support
 
 If you would like to support this project, you can make a donation.
 
