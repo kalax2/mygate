@@ -1,0 +1,7 @@
+services:
+  mygate:
+    container_name: mygate
+    image: kalax2/mygate
+    restart: unless-stopped
+    volumes:
+      - ./token.json:/app/token.json
