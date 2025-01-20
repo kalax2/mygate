@@ -1,5 +1,4 @@
 import time
-import os
 import requests
 import json
 from selenium import webdriver
@@ -85,6 +84,8 @@ def main():
 
     while True:
         try:
+            browser.refresh()
+            time.sleep(5)
             today_reward = browser.find_element(By.XPATH, "//div[text()=\"Today's Reward\"]/preceding-sibling::label[1]")
             season_reward = browser.find_element(By.XPATH, "//div[text()=\"Season 0 Reward\"]/preceding-sibling::label[1]")
             logger.info(f"Today's reward: {today_reward.text}, Season reward: {season_reward.text}")
